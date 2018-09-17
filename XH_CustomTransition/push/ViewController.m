@@ -50,6 +50,8 @@
 }
 
 
+
+
 -(UIImageView *)ImageView{
     if (!_ImageView) {
         _ImageView = [[UIImageView alloc]init];

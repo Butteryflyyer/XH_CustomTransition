@@ -31,6 +31,7 @@
 //    fromVC.selectedCell.imageView.hidden = YES;
     
     //3.设置目标控制器的位置，并把透明度设为0，在后面的动画中慢慢显示出来变为1
+
     toVC.view.frame = [transitionContext finalFrameForViewController:toVC];
     toVC.view.alpha = 0;
     toVC.bgImageView.hidden = YES;

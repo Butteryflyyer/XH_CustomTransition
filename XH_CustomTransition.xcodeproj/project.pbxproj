@@ -19,6 +19,10 @@
 		BDB5C2E82148FEE000FDBEDC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB5C2E72148FEE000FDBEDC /* DetailViewController.m */; };
 		BDB5C2EB214900B100FDBEDC /* customNavgationPushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB5C2EA214900B100FDBEDC /* customNavgationPushTransition.m */; };
 		BDB5C2EE214900C900FDBEDC /* customNavgationPopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB5C2ED214900C900FDBEDC /* customNavgationPopTransition.m */; };
+		BDB5C7A8214BC4DC00FDBEDC /* rootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB5C7A7214BC4DC00FDBEDC /* rootViewController.m */; };
+		BDB5C7AB214BC65D00FDBEDC /* presentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB5C7AA214BC65D00FDBEDC /* presentViewController.m */; };
+		BDB5C7B0214BC70300FDBEDC /* presentDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB5C7AF214BC70300FDBEDC /* presentDViewController.m */; };
+		BDB5C7B6214BCB9500FDBEDC /* customPresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB5C7B5214BCB9500FDBEDC /* customPresentTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,15 @@
 		BDB5C2EA214900B100FDBEDC /* customNavgationPushTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customNavgationPushTransition.m; sourceTree = "<group>"; };
 		BDB5C2EC214900C900FDBEDC /* customNavgationPopTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = customNavgationPopTransition.h; sourceTree = "<group>"; };
 		BDB5C2ED214900C900FDBEDC /* customNavgationPopTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customNavgationPopTransition.m; sourceTree = "<group>"; };
+		BDB5C7A6214BC4DC00FDBEDC /* rootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rootViewController.h; sourceTree = "<group>"; };
+		BDB5C7A7214BC4DC00FDBEDC /* rootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rootViewController.m; sourceTree = "<group>"; };
+		BDB5C7A9214BC65D00FDBEDC /* presentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = presentViewController.h; sourceTree = "<group>"; };
+		BDB5C7AA214BC65D00FDBEDC /* presentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = presentViewController.m; sourceTree = "<group>"; };
+		BDB5C7AE214BC70300FDBEDC /* presentDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = presentDViewController.h; sourceTree = "<group>"; };
+		BDB5C7AF214BC70300FDBEDC /* presentDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = presentDViewController.m; sourceTree = "<group>"; };
+		BDB5C7B3214BC89E00FDBEDC /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		BDB5C7B4214BCB9500FDBEDC /* customPresentTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = customPresentTransition.h; sourceTree = "<group>"; };
+		BDB5C7B5214BCB9500FDBEDC /* customPresentTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customPresentTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +127,11 @@
 			children = (
 				BDB5C2B22148FE8A00FDBEDC /* AppDelegate.h */,
 				BDB5C2B32148FE8A00FDBEDC /* AppDelegate.m */,
-				BDB5C2B52148FE8A00FDBEDC /* ViewController.h */,
-				BDB5C2B62148FE8A00FDBEDC /* ViewController.m */,
-				BDB5C2E62148FEE000FDBEDC /* DetailViewController.h */,
-				BDB5C2E72148FEE000FDBEDC /* DetailViewController.m */,
-				BDB5C2E9214900B100FDBEDC /* customNavgationPushTransition.h */,
-				BDB5C2EA214900B100FDBEDC /* customNavgationPushTransition.m */,
-				BDB5C2EC214900C900FDBEDC /* customNavgationPopTransition.h */,
-				BDB5C2ED214900C900FDBEDC /* customNavgationPopTransition.m */,
+				BDB5C7A6214BC4DC00FDBEDC /* rootViewController.h */,
+				BDB5C7A7214BC4DC00FDBEDC /* rootViewController.m */,
+				BDB5C7B3214BC89E00FDBEDC /* common.h */,
+				BDB5C7AC214BC66E00FDBEDC /* push */,
+				BDB5C7AD214BC68600FDBEDC /* present */,
 				BDB5C2B82148FE8A00FDBEDC /* Main.storyboard */,
 				BDB5C2BB2148FE8B00FDBEDC /* Assets.xcassets */,
 				BDB5C2E42148FEA300FDBEDC /* 2.jpeg */,
@@ -148,6 +158,34 @@
 				BDB5C2D82148FE8B00FDBEDC /* Info.plist */,
 			);
 			path = XH_CustomTransitionUITests;
+			sourceTree = "<group>";
+		};
+		BDB5C7AC214BC66E00FDBEDC /* push */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5C2E62148FEE000FDBEDC /* DetailViewController.h */,
+				BDB5C2E72148FEE000FDBEDC /* DetailViewController.m */,
+				BDB5C2E9214900B100FDBEDC /* customNavgationPushTransition.h */,
+				BDB5C2EA214900B100FDBEDC /* customNavgationPushTransition.m */,
+				BDB5C2EC214900C900FDBEDC /* customNavgationPopTransition.h */,
+				BDB5C2ED214900C900FDBEDC /* customNavgationPopTransition.m */,
+				BDB5C2B52148FE8A00FDBEDC /* ViewController.h */,
+				BDB5C2B62148FE8A00FDBEDC /* ViewController.m */,
+			);
+			path = push;
+			sourceTree = "<group>";
+		};
+		BDB5C7AD214BC68600FDBEDC /* present */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5C7A9214BC65D00FDBEDC /* presentViewController.h */,
+				BDB5C7AA214BC65D00FDBEDC /* presentViewController.m */,
+				BDB5C7AE214BC70300FDBEDC /* presentDViewController.h */,
+				BDB5C7AF214BC70300FDBEDC /* presentDViewController.m */,
+				BDB5C7B4214BCB9500FDBEDC /* customPresentTransition.h */,
+				BDB5C7B5214BCB9500FDBEDC /* customPresentTransition.m */,
+			);
+			path = present;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,10 +321,14 @@
 			files = (
 				BDB5C2B72148FE8A00FDBEDC /* ViewController.m in Sources */,
 				BDB5C2C22148FE8B00FDBEDC /* main.m in Sources */,
+				BDB5C7AB214BC65D00FDBEDC /* presentViewController.m in Sources */,
+				BDB5C7A8214BC4DC00FDBEDC /* rootViewController.m in Sources */,
+				BDB5C7B0214BC70300FDBEDC /* presentDViewController.m in Sources */,
 				BDB5C2B42148FE8A00FDBEDC /* AppDelegate.m in Sources */,
 				BDB5C2EE214900C900FDBEDC /* customNavgationPopTransition.m in Sources */,
 				BDB5C2E82148FEE000FDBEDC /* DetailViewController.m in Sources */,
 				BDB5C2EB214900B100FDBEDC /* customNavgationPushTransition.m in Sources */,
+				BDB5C7B6214BCB9500FDBEDC /* customPresentTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
